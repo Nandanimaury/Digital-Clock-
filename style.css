@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://images.pexels.com/photos/1123876/pexels-photo-1123876.jpeg?cs=srgb&dl=pexels-mike-yak-415187-1123876.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    
+
+}
+h1 {
+    background-color: #fff;
+    margin: 50px;
+    border-radius: 5px;
+}
+.clock {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 5px solid black;
+}
+
+.clock span {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.one { top: 20px; right: 65px; }
+.two { top: 65px; right: 20px; }
+.three { right: 10px; top: 115px; }
+.four { bottom: 60px; right: 25px; }
+.five { bottom: 20px; right: 65px; }
+.six { bottom: 10px; left: 115px; }
+.seven { bottom: 20px; left: 65px; }
+.eight { bottom: 60px; left: 25px; }
+.nine { left: 10px; top: 115px; }
+.ten { top: 65px; left: 20px; }
+.eleven { top: 20px; left: 60px; }
+.twelve { top: 10px; left: 115px; }
+
+
+.hand {
+    position: absolute;
+    transform-origin: 70% 100%;
+    background: black;
+    border-radius: 5px;
+}
+.hour {
+    width: 6px;
+    height: 60px;
+    top: 60px;
+}
+.min {
+    width: 4px;
+    height: 80px;
+    top: 40px;
+    background-color: red;
+}
+.sec {
+    width: 2px;
+    height: 90px;
+    top: 30px;
+    background-color: blue;
+}
